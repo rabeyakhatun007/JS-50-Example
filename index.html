@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript-Example</title>
+
+  <!-- favicon link -->
+  <link rel="icon" href="images/fav.png">
+  <!-- font awesome link -->
+  <script src="https://kit.fontawesome.com/daf98d2ef3.js" crossorigin="anonymous"></script>
+  <!--css links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  <div class="container">
+    <!--Example:1-->
+    <h2 class="text-danger">1. My First JavaScript</h2>
+    <button class="btn btn-dark" onclick="showText()">Show Text</button>
+    <h3 id="s_text"></h3>
+    <hr>
+
+    <!--Example:2-->
+    <h2 class="text-danger">2. What can JavaScript do?</h2>
+    <button class="btn btn-dark" type="Button" onclick="showContent()">Click Me</button>
+    <h3 id="demo">JavaScript can change HTML content.</h3>
+
+    <hr>
+
+    <!--Example:3-->
+    <h2 class="text-danger">2. Click the Button to show the DATE</h2>
+    <button onclick="showDate()" class="btn btn-dark" type="Button">Show Date</button>
+    <h3 id="s_date"></h3>
+    <hr>
+
+
+    <!--Example:4-->
+    <h2 class="text-danger">4. Click the button to turn On/Off the Bulb</h2>
+    <button onclick="bulbOn()" class="btn btn-dark">BulbOn</button>
+    <button onclick="bulbOff()" class="btn btn-dark" type="Button">BulbOff</button>
+    <img id="img" src="images/off.gif" alt="#">
+    <hr>
+
+
+    <!--Example:5-->
+    <h2 class="text-danger">5. JavaScript can Show/Hide the content.</h2>
+    <button onclick="showContent()" class="btn btn-dark" type="Button">Show</button>
+    <button onclick="hideContent()" class="btn btn-dark" type="Button">Hide</button>
+    <h3 id="con">Hide or show me Now..</h3>
+    <hr>
+
+
+    <!--Example:6-->
+    <h2>6. Click the button to Show the result</h2>
+    <button onclick="showResult()" class="btn btn-dark">Result</button>
+    <h3 id="result">Value is (5+4)= </h3>
+    <hr>
+
+    <!--Example:7-->
+    <h2>7. JavaScript Statements</h2>
+    <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+    <h3 id="demo2"></h3>
+    <hr>
+
+
+    <!--Example:8-->
+    <h2>8. JavaScript Statements</h2>
+    <p>JavaScript statements are separated by semicolons.</p>
+    <h3 id="demo3"></h3>
+    <hr>
+
+
+    <!--Example:9-->
+    <h2>9. JavaScript Statements</h2>
+    <p>Multiple statements on one line are allowed.</p>
+    <h3 id="demo4"></h3>
+    <hr>
+
+
+    <!--Example:10-->
+    <h2>10. JavaScript Statements</h2>
+    <p>The best place to break a code line is after an operator or a comma.</p>
+    <h3 id="demo5"></h3>
+    <hr>
+
+
+    <!--Example:11-->
+    <h2>11. JavaScript Statements</h2>
+    <p>JavaScript code blocks are written between { and }</p>
+    <button type="button" onclick="seeBlocks()">Click Me!</button>
+    <h3 id="demo6"></h3>
+    <h3 id="demo7"></h3>
+    <hr>
+
+
+    <!--Example:12-->
+    <h2>12. JavaScript Numbers</h2>
+    <p>Number can be written with or without decimals.</p>
+    <h3 id="demo8"></h3>
+    <hr>
+
+    <!--Example:13-->
+    <h2>13. JavaScript Strings</h2>
+    <p>Strings can be written with double or single quotes.</p>
+    <h3 id="demo9"></h3>
+    <hr>
+
+
+    <!--Example:14-->
+    <h2>14. JavaScript Variables</h2>
+    <p>In this example,'r' is defined as a variable.
+    Then, r is assigned the value of 6:</p>
+    <h3 id="demo10"></h3>
+    <hr>
+
+
+    <!--Example:15-->
+    <h2>15. JavaScript Operators</h2>
+    <p>JavaScript uses arithmetic operators to compute values (just like algebra).</p>
+    <h3 id="demo11"></h3>
+    <hr>
+
+    <!--Example:16-->
+    <h2>16. Assigning JavaScript Values</h2>
+    <p>In JavaScript the = operator is used to assign values to variables.</p>
+    <h3 id="demo12"></h3>
+    <hr>
+
+    <!--Example:17-->
+    <h2>17. JavaScript Expressions</h2>
+    <p>Expressions compute to values.</p>
+    <h3 id="demo13"></h3>
+    <hr>
+
+
+    <!--Example:18-->
+    <h2>18. JavaScript Expressions</h2>
+    <p>Expressions compute to values.</p>
+    <h3 id="demo14"></h3>
+    <hr>
+
+
+    <!--Example:19-->
+    <h2>19. JavaScript Expressions</h2>
+    <p>Expressions compute to values.</p>
+    <h3 id="demo15"></h3>
+    <hr>
+
+
+    <!--Example:20-->
+    <h2>20. The <b>let</b> Keyword Creates Variables</h2>
+    <h3 id="demo16"></h3>
+    <hr>
+
+    <!--Example:21-->
+    <h2>21. JavaScript is Case Sensitive</h2>
+    <p>Try to change lastName to lastname.</p>
+    <h3 id="demo17"></h3>
+    <hr>
+
+
+    <!--Example:22-->
+    <h1>22. </h1>
+    <h2 id="myH"></h2>
+    <h3 id="myP"></h3>
+    <hr>
+
+
+    <!--Example:23-->
+    <h2>23. JavaScript Comments</h2>
+    <h3 id="demo18"></h3>
+    <hr>
+
+    <!--Example:24-->
+    <h1>24. JavaScript Variables</h1>
+    <p>In this example, x, y, and z are undeclared.</p>
+    <p>They are automatically declared when first used.</p>
+    <h3 id="demo19"></h3>
+    <hr>
+
+
+    <!--Example:25-->
+    <h1>25. JavaScript Variables</h1>
+    <p>In this example, x, y, and z are variables.</p>
+    <h3 id="demo20"></h3>
+    <hr>
+
+    <!--Example:26-->
+    <h2>26. Redeclaring a Variable Using var</h2>
+    <h3 id="demo21"></h3>
+    <hr>
+
+    <!--Example:27-->
+    <h2>27. JavaScript const</h2>
+    <h3 id="demo22"></h3>
+    <hr>
+
+    <!--Example:28-->
+    <h2>28. JavaScript const</h2>
+    <p>Declaring a constant array does NOT make the elements unchangeable:</p>
+    <h3 id="demo23"></h3>
+    <hr>
+
+
+    <!--Example:29-->
+    <h2>29. JavaScript const</h2>
+    <p>Declaring a constant object does NOT make the objects properties unchangeable:</p>
+    <h3 id="demo24"></h3>
+    <hr>
+
+
+    <!--Example:30-->
+    <h2>30. JavaScropt const variables has block scope</h2>
+    <h3 id="demo25"></h3>
+    <hr>
+
+
+    <!--Example:31-->
+    <h1>31. JavaScript Operators</h1>
+    <h2>The Assignment (=) Operator</h2>
+    <h3 id="demo26"></h3>
+    <hr>
+
+
+
+    <!--Example:32-->
+    <h1>32. JavaScript Arithmetic</h1>
+    <h2>The + Operator</h2>
+    <h3 id="demo27"></h3>
+    <hr>
+
+
+   <!--Example:33-->
+    <h1>33. JavaScript Arithmetic</h1>
+    <h2>The * Operator</h2>
+    <h3 id="demo28"></h3>
+    <hr>
+
+
+    <!--Example:34-->
+    <h1>34. JavaScript String Operators</h1>
+    <h2>The + Operator</h2>
+    <p>Adding a number and a string, returns a string.</p>
+    <h3 id="demo29"></h3>
+    <hr>
+
+    <!--Example:35-->
+    <h1>35. JavaScript Assignments</h1>
+    <h2>Simple Assignment</h2>
+    <h3>The = Operator</h3>
+    <h3 id="demo30"></h3>
+    <hr>
+
+
+    <!--Example:36-->
+    <h2>36. JavaScript</h2>
+    <p>When adding a number and a string, JavaScript will treat the number as a string.</p>
+    <h3 id="demo31"></h3>
+    <hr>
+
+
+    <!--Example:37-->
+    <h1>37. JavaScript Assignments</h1>
+    <h2>Simple Assignment</h2>
+    <h3>The = Operator</h3>
+    <p id="demo32"></p>
+    <hr>
+
+
+    <!--Example:38-->
+    <h1>38. JavaScript Assignments</h1>
+    <h2>Addition Assignment</h2>
+    <h3>The += Operator</h3>
+    <p id="demo33"></p>
+    <hr>
+
+
+    <!--Example:39-->
+    <h1>39. JavaScript Assignments</h1>
+    <h2>Subtraction Assignment</h2>
+    <h3>The -= Operator</h3>
+    <p id="demo34"></p>
+    <hr>
+
+
+    <!--Example:40-->
+    <h1>40. JavaScript Assignments</h1>
+    <h2>Multiplication Assignment</h2>
+    <h3>The *= Operator</h3>
+    <p id="demo35"></p>
+    <hr> 
+
+    <!--Example:41-->
+    <h1>41. JavaScript Assignments</h1>
+    <h2>Exponentiation Assignment</h2>
+    <h3>The **= Operator</h3>
+    <p id="demo36"></p>
+    <hr>
+
+   <!--Example:42-->
+    <h1>42. JavaScript Assignments</h1>
+    <h2>Division Assignment</h2>
+    <h3>The /= Operator</h3>
+    <p id="demo37"></p>
+    <hr>
+
+
+    <!--Example:43-->
+    <h1>43. JavaScript Assignments</h1>
+    <h2>Remainder Assignment</h2>
+    <h3>The %= Operator</h3>
+    <p id="demo38"></p>
+    <hr>
+
+
+    <!--Example:44-->
+    <h1>44. JavaScript Assignments</h1>
+    <h2>Left Shift Assignment</h2>
+    <h3>The <<= Operator</h3>
+    <p id="demo39"></p>
+    <hr>
+
+
+    <!--Example:45-->
+    <h1>45. JavaScript Assignments</h1>
+    <h2>Bitwise XOR Assignment</h2>
+    <h3>The ^= Operator</h3>
+    <p id="demo40"></p>
+    <hr>
+
+
+    <!--Example:46-->
+    <h1>46. JavaScript Assignments</h1>
+    <h2>Logical AND Assignment</h2>
+    <h3>The &&= Operator</h3>
+    <p>If the first value is true, the second value is assigned.</p>
+    <p id="demo41"></p>
+    <hr>
+
+
+    <!--Example:47-->
+    <h1>47. JavaScript Assignments</h1>
+    <h2>Logical OR Assignment</h2>
+    <h3>The ||= Operator</h3>
+    <p>If the first value is false, the second value is assigned:</p>
+    <p id="demo42"></p>
+    <hr>
+
+
+    <!--Example:48-->
+    <h1>48. JavaScript Assignments</h1>
+    <h2>The ??= Operator</h2>
+    <p>The ??= operator is used between two values. If the first value is undefined or null, the second value is assigned.</p>
+    <p id="demo43"></p>
+    <hr>
+
+
+    <!--Example:49-->
+    <h2>49. JavaScript Strings</h2>
+    <p>Strings are written with quotes. You can use single or double quotes:</p>
+    <p id="demo44"></p>
+    <hr>
+
+
+    <!--Example:50-->
+    <h2>50. JavaScript Strings</h2>
+    <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+    <p id="demo45"></p>
+    <hr>
+
+    <!--Example:51-->
+    <h2>51. JavaScript Numbers</h2>
+    <p>Numbers can be written with, or without decimals:</p>
+    <h3 id="demo46"></h3>
+    <hr>
+
+    <!--Example:52-->
+    <h2>52. JavaScript Numbers</h2>
+    <p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+    <h3 id="demo47"></h3>
+    <hr>
+
+    <!--Example:52-->
+    <h1>53. JavScript Bigint</h1>
+    <p>A BigInt can not have decimals.</p>
+    <h3 id="demo48"></h3>
+    <p>You cannot perform math between a BigInt type and a Number type.</p>
+    <hr>
+
+
+    <!--Example:54-->
+    <h2>54. JavaScript Booleans</h2>
+    <p>Booleans can have two values: true or false:</p>
+    <h3 id="demo49"></h3>
+    <hr>
+
+    <!--Example:55-->
+    <h2>55. JavaScript Arrays</h2>
+    <p>Array indexes are zero-based, which means the first item is [0].</p>
+    <h3 id="demo50"></h3>
+    <hr>
+
+    <!--Example:56-->
+    <h2>56. JavaScript Objects</h2>
+    <h3 id="demo51"></h3>
+    <hr>
+
+
+    <!--Example:57-->
+    <h1>57. JavaScript Operators</h1>
+    <h2>The typeof Operator</h2>
+    <p>The typeof operator returns the type of a variable or an expression.</p>
+    <h3 id="demo52"></h3>
+    <hr>
+
+
+    <!--Example:58-->
+    <h1>58. JavaScript Operators</h1>
+    <h2>The typeof Operator</h2>
+    <p>The typeof operator returns the type of a variable or an expression.</p>
+    <h3 id="demo53"></h3>
+    <hr>
+
+
+    <!--Example:59-->
+    <h1>59. JavaScript Operators</h1>
+    <h2>The typeof Operator</h2>
+    <p>The value (and the data type) of a variable with no value is <b>undefined</b>.</p>
+    <h3 id="demo54"></h3>
+    <hr>
+
+
+    <!--Example:60-->
+    <h1>60. JavaScript Datatypes</h1>
+    <p>An empty string has both a legal value and a type:</p>
+    <p id="demo55"></p>
+    <hr>
+
+
+
+    <!--Example:61-->
+
+    <!--Example:62-->
+
+    <!--Example:63-->
+
+
+
+</div>
+</body>
+
+
+  <!--script links-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
